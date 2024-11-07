@@ -10,8 +10,8 @@ from operator import is_not
 import pandas as pd
 import re
 import time
-import tkinter as tk
-from tkinter import filedialog
+# import tkinter as tk
+# from tkinter import filedialog
 import requests
 import streamlit as st
 import sys
@@ -859,14 +859,18 @@ def LLM_audit(dialog):
 
 
 
-def select_folder():
-   root = tk.Tk()
-   root.wm_attributes('-topmost', 1)
-   root.withdraw()
-   folder_path = filedialog.askdirectory(parent=root)
+# def select_folder():
+#    root = tk.Tk()
+#    root.wm_attributes('-topmost', 1)
+#    root.withdraw()
+#    folder_path = filedialog.askdirectory(parent=root)
     
-   root.destroy()
-   return folder_path
+#    root.destroy()
+#    return folder_path
+
+def select_folder():
+    return
+
 
 def create_log_entry(event_description, log_file='logfile.txt', csv_file='logfile.csv'):
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
