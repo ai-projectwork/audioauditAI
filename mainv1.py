@@ -53,6 +53,15 @@ import threading
 # LiveOptions,
 # )
 
+import os
+from dotenv import load_dotenv  
+
+# Load environment variables from .env file
+load_dotenv()
+# Access the API key using the variable name defined in the .env file
+API_KEY = os.getenv("OPENAI_API_KEY")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
 
 #LLM Model and API key
 #Specific the LLM Key for the API
@@ -61,10 +70,10 @@ import threading
 
 #OpenAI model and API key
 GPT_MODEL="gpt-3.5-turbo"
-API_KEY = "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"
+# API_KEY = "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"
 # API_KEY = "sk-nyp-ai-devops-AgMUleAJ6EZILgFu5uaCT3BlbkFJldGad3ZgxG0hp2nhoGlJ"
 #Groq model and API key
-GROQ_API_KEY="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" 
+# GROQ_API_KEY="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" 
 
 
 groq_client = Groq(api_key=GROQ_API_KEY)
