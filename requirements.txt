@@ -10,7 +10,6 @@ langsmith==0.1.137
 mutagen==1.47.0
 pydub==0.25.1
 XlsxWriter==3.2.0
-torch==2.5.1
 nltk==3.9.1
 openpyxl==3.1.5
 python-dotenv==1.0.1
